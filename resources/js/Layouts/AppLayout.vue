@@ -56,6 +56,35 @@
 
                                     <div class="border-t border-gray-100"></div>
 
+                                    <!-- Panen Raya Modules -->
+                                    <template v-if="$page.user.role === 'admin'">
+                                        <div class="block px-4 py-2 text-xs text-gray-400">
+                                            {{ $page.app.name }}
+                                        </div>
+
+                                        <jet-dropdown-link :href="route('admin.peternakan.index')">
+                                            Peternakan
+                                        </jet-dropdown-link>
+
+                                        <jet-dropdown-link :href="route('admin.pertanian.index')">
+                                            Pertanian
+                                        </jet-dropdown-link>
+
+                                        <jet-dropdown-link :href="route('admin.nelayan.index')">
+                                            Nelayan
+                                        </jet-dropdown-link>
+
+                                        <jet-dropdown-link :href="route('admin.pasar_rakyat.index')">
+                                            Pasar Rakyat
+                                        </jet-dropdown-link>
+
+                                        <jet-dropdown-link :href="route('admin.umkm.index')">
+                                            UMKM
+                                        </jet-dropdown-link>
+
+                                        <div class="border-t border-gray-100"></div>
+                                    </template>
+
                                     <!-- Team Management -->
                                     <template v-if="$page.jetstream.hasTeamFeatures">
                                         <div class="block px-4 py-2 text-xs text-gray-400">
@@ -93,6 +122,10 @@
                                     </template>
 
                                     <!-- Authentication -->
+                                    <div class="block px-4 py-2 text-xs text-gray-400">
+                                        Authentication
+                                    </div>
+
                                     <form @submit.prevent="logout">
                                         <jet-dropdown-link as="button">
                                             Logout
