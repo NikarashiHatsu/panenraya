@@ -18,7 +18,13 @@ Route::get('/', function () {
 });
 
 Route::group(['prefix' => 'admin', 'as' => 'admin.', 'middleware' => 'check_admin'], function() {
-    Route::resource('peternakan', '\App\Http\Controllers\PeternakanController');
+    Route::group(['prefix' => 'peternakan', 'as' => 'peternakan.'], function() {
+        Route::resource('', '\App\Http\Controllers\PeternakanController');
+        Route::resource('hewan_darat', '\App\Http\Controllers\Peternakan\HewanDaratController');
+        Route::resource('hewan_air', '\App\Http\Controllers\Peternakan\HewanAirController');
+        Route::resource('hewan_amfibi', '\App\Http\Controllers\Peternakan\HewanAmfibiController');
+    });
+
     Route::resource('pertanian', '\App\Http\Controllers\PertanianController');
     Route::resource('nelayan', '\App\Http\Controllers\NelayanController');
     Route::resource('pasar_rakyat', '\App\Http\Controllers\PasarRakyatController');
