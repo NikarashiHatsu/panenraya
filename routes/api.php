@@ -14,6 +14,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::group(['prefix' => 'v1', 'as' => 'v1.'], function() {
+    Route::resource('module_peternakan', 'App\Http\Controllers\Api\ModulePeternakanController');
+});
+
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
