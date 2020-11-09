@@ -56,7 +56,7 @@
 
                                     <div class="border-t border-gray-100"></div>
 
-                                    <!-- Panen Raya Modules -->
+                                    <!-- Panen Raya Modules for Admin -->
                                     <template v-if="$page.user.role === 'admin'">
                                         <div class="block px-4 py-2 text-xs text-gray-400">
                                             {{ $page.app.name }}
@@ -80,6 +80,19 @@
 
                                         <jet-dropdown-link :href="route('admin.umkm.index')">
                                             UMKM
+                                        </jet-dropdown-link>
+
+                                        <div class="border-t border-gray-100"></div>
+                                    </template>
+
+                                    <!-- Panen Raya Modules for Users -->
+                                    <template v-if="$page.user.role === 'user'">
+                                        <div class="block px-4 py-2 text-xs text-gray-400">
+                                            {{ $page.app.name }}
+                                        </div>
+
+                                        <jet-dropdown-link :href="route('user.peternakan.index')">
+                                            Peternakan
                                         </jet-dropdown-link>
 
                                         <div class="border-t border-gray-100"></div>
