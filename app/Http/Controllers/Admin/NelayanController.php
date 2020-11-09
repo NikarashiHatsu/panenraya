@@ -1,12 +1,12 @@
 <?php
 
-namespace App\Http\Controllers\Peternakan;
+namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Inertia\Inertia;
 
-class HewanAirController extends Controller
+class NelayanController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,7 +15,7 @@ class HewanAirController extends Controller
      */
     public function index()
     {
-        return Inertia::render('Peternakan/HewanAir/Index');
+        return Inertia::render('Nelayan/Index');
     }
 
     /**

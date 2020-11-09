@@ -1,11 +1,12 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Admin;
 
+use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Inertia\Inertia;
 
-class PasarRakyatController extends Controller
+class PeternakanController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,7 +15,7 @@ class PasarRakyatController extends Controller
      */
     public function index()
     {
-        return Inertia::render('PasarRakyat/Index');
+        return Inertia::render('Peternakan/Index');
     }
 
     /**

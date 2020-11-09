@@ -1,11 +1,12 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Admin;
 
+use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Inertia\Inertia;
 
-class NelayanController extends Controller
+class PertanianController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,7 +15,7 @@ class NelayanController extends Controller
      */
     public function index()
     {
-        return Inertia::render('Nelayan/Index');
+        return Inertia::render('Pertanian/Index');
     }
 
     /**
