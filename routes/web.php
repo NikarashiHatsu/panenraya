@@ -23,6 +23,7 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.', 'middleware' => 'check_admi
         Route::resource('hewan_darat', '\App\Http\Controllers\Peternakan\HewanDaratController');
         Route::resource('hewan_air', '\App\Http\Controllers\Peternakan\HewanAirController');
         Route::resource('hewan_amfibi', '\App\Http\Controllers\Peternakan\HewanAmfibiController');
+        Route::resource('relawan_peternakan', '\App\Http\Controllers\Peternakan\RelawanPeternakanController');
     });
 
     Route::resource('pertanian', '\App\Http\Controllers\PertanianController');
