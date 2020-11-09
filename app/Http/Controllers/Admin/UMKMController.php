@@ -15,7 +15,7 @@ class UMKMController extends Controller
      */
     public function index()
     {
-        return Inertia::render('UMKM/Index');
+        return Inertia::render('Admin/UMKM/Index');
     }
 
     /**

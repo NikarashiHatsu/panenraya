@@ -15,7 +15,7 @@ class HewanAmfibiController extends Controller
      */
     public function index()
     {
-        return Inertia::render('Peternakan/HewanAmfibi/Index');
+        return Inertia::render('Admin/Peternakan/HewanAmfibi/Index');
     }
 
     /**

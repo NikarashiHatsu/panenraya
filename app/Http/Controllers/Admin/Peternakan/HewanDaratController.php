@@ -15,7 +15,7 @@ class HewanDaratController extends Controller
      */
     public function index()
     {
-        return Inertia::render('Peternakan/HewanDarat/Index');
+        return Inertia::render('Admin/Peternakan/HewanDarat/Index');
     }
 
     /**

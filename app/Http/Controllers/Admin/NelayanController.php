@@ -15,7 +15,7 @@ class NelayanController extends Controller
      */
     public function index()
     {
-        return Inertia::render('Nelayan/Index');
+        return Inertia::render('Admin/Nelayan/Index');
     }
 
     /**

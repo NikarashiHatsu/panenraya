@@ -15,7 +15,7 @@ class PeternakanController extends Controller
      */
     public function index()
     {
-        return Inertia::render('Peternakan/Index');
+        return Inertia::render('Admin/Peternakan/Index');
     }
 
     /**

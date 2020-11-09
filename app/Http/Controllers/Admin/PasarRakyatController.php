@@ -15,7 +15,7 @@ class PasarRakyatController extends Controller
      */
     public function index()
     {
-        return Inertia::render('PasarRakyat/Index');
+        return Inertia::render('Admin/PasarRakyat/Index');
     }
 
     /**

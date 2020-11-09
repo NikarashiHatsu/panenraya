@@ -15,7 +15,7 @@ class PertanianController extends Controller
      */
     public function index()
     {
-        return Inertia::render('Pertanian/Index');
+        return Inertia::render('Admin/Pertanian/Index');
     }
 
     /**
