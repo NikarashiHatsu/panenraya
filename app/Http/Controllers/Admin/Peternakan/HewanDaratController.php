@@ -3,7 +3,9 @@
 namespace App\Http\Controllers\Admin\Peternakan;
 
 use App\Http\Controllers\Controller;
+use App\Models\ModulePeternakan;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Validator;
 use Inertia\Inertia;
 
 class HewanDaratController extends Controller
@@ -15,7 +17,11 @@ class HewanDaratController extends Controller
      */
     public function index()
     {
-        return Inertia::render('Admin/Peternakan/HewanDarat/Index');
+        $modulePeternakans = ModulePeternakan::all();
+
+        return Inertia::render('Admin/Peternakan/HewanDarat/Index', [
+            'modulePeternakans' => $modulePeternakans
+        ]);
     }
 
     /**
@@ -36,7 +42,16 @@ class HewanDaratController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'label_module' => ['required'],
+        ]);
+
+        ModulePeternakan::create($request->all());
+
+        return response()->json([
+            'message' => 'Berhasil menambahkan data.',
+            'data' => ModulePeternakan::all(),
+        ], 200);
     }
 
     /**
@@ -70,7 +85,16 @@ class HewanDaratController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $request->validate([
+            'label_module' => ['required'],
+        ]);
+
+        ModulePeternakan::findOrFail($id)->update($request->all());
+
+        return response()->json([
+            'message' => 'Berhasil mengubah data.',
+            'data' => ModulePeternakan::all(),
+        ], 200);
     }
 
     /**
@@ -81,6 +105,11 @@ class HewanDaratController extends Controller
      */
     public function destroy($id)
     {
-        //
+        ModulePeternakan::findOrFail($id)->delete();
+
+        return response()->json([
+            'message' => 'Berhasil menghapus data.',
+            'data' => ModulePeternakan::all(),
+        ], 200);
     }
 }
