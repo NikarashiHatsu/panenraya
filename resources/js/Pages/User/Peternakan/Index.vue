@@ -10,10 +10,13 @@
       <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
         <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
 
-          <div class="p-6">
-            <div class="text-xl">
+          <div>
+            <div class="text-xl p-6">
               Modul peternakan yang tersedia:
             </div>
+            <inertia-link :href="route('user.peternakan.ayam.index')" class="block border-l-4 border-gray-400 text-lg p-4 bg-gray-50 transition duration-200 ease-in-out hover:bg-gray-100">
+              Ayam
+            </inertia-link>
           </div>
           
         </div>

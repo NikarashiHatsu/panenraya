@@ -24,7 +24,7 @@
 
             <template #footer>
                 <jet-secondary-button @click.native="confirmingPassword = false">
-                    Nevermind
+                    {{ cancel }}
                 </jet-secondary-button>
 
                 <jet-button class="ml-2" @click.native="confirmPassword" :class="{ 'opacity-25': form.processing }" :disabled="form.processing">
@@ -52,6 +52,9 @@
             },
             button: {
                 default: 'Confirm',
+            },
+            cancel: {
+                default: 'Nevermind',
             }
         },
 

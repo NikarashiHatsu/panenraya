@@ -2140,6 +2140,9 @@ __webpack_require__.r(__webpack_exports__);
     },
     button: {
       "default": 'Confirm'
+    },
+    cancel: {
+      "default": 'Nevermind'
     }
   },
   components: {
@@ -4965,6 +4968,138 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/User/Peternakan/Ayam/Index.vue?vue&type=script&lang=js&":
+/*!********************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/Pages/User/Peternakan/Ayam/Index.vue?vue&type=script&lang=js& ***!
+  \********************************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Layouts_AppLayout__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @/Layouts/AppLayout */ "./resources/js/Layouts/AppLayout.vue");
+/* harmony import */ var _Jetstream_Button__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @/Jetstream/Button */ "./resources/js/Jetstream/Button.vue");
+/* harmony import */ var _Jetstream_ConfirmsPassword__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @/Jetstream/ConfirmsPassword */ "./resources/js/Jetstream/ConfirmsPassword.vue");
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  components: {
+    AppLayout: _Layouts_AppLayout__WEBPACK_IMPORTED_MODULE_0__["default"],
+    JetButton: _Jetstream_Button__WEBPACK_IMPORTED_MODULE_1__["default"],
+    JetConfirmsPassword: _Jetstream_ConfirmsPassword__WEBPACK_IMPORTED_MODULE_2__["default"]
+  },
+  data: function data() {
+    return {
+      mengkonfirmasi: false
+    };
+  },
+  methods: {
+    ikutiGuidance: function ikutiGuidance() {
+      alert("Anda terdaftar pada guidance ini.");
+    }
+  }
+});
+
+/***/ }),
+
 /***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/User/Peternakan/Index.vue?vue&type=script&lang=js&":
 /*!***************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/Pages/User/Peternakan/Index.vue?vue&type=script&lang=js& ***!
@@ -4975,6 +5110,9 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Layouts_AppLayout__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @/Layouts/AppLayout */ "./resources/js/Layouts/AppLayout.vue");
+//
+//
+//
 //
 //
 //
@@ -24248,7 +24386,13 @@ var render = function() {
                       }
                     }
                   },
-                  [_vm._v("\n                Nevermind\n            ")]
+                  [
+                    _vm._v(
+                      "\n                " +
+                        _vm._s(_vm.cancel) +
+                        "\n            "
+                    )
+                  ]
                 ),
                 _vm._v(" "),
                 _c(
@@ -29643,6 +29787,282 @@ render._withStripped = true
 
 /***/ }),
 
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/User/Peternakan/Ayam/Index.vue?vue&type=template&id=c00065fc&":
+/*!************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/Pages/User/Peternakan/Ayam/Index.vue?vue&type=template&id=c00065fc& ***!
+  \************************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "app-layout",
+    {
+      scopedSlots: _vm._u([
+        {
+          key: "header",
+          fn: function() {
+            return [
+              _c(
+                "div",
+                { staticClass: "flex items-center" },
+                [
+                  _c(
+                    "inertia-link",
+                    {
+                      staticClass:
+                        "font-semibold text-xl text-gray-800 leading-tight",
+                      attrs: { href: _vm.route("user.peternakan.index") }
+                    },
+                    [_vm._v("\n        Peternakan\n      ")]
+                  ),
+                  _vm._v(" "),
+                  _c("span", { staticClass: "ml-2" }, [
+                    _vm._v("\n        >\n      ")
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "ml-2" }, [
+                    _vm._v("\n        Ayam\n      ")
+                  ])
+                ],
+                1
+              )
+            ]
+          },
+          proxy: true
+        }
+      ])
+    },
+    [
+      _vm._v(" "),
+      _c("div", { staticClass: "py-12" }, [
+        _c("div", { staticClass: "max-w-7xl mx-auto sm:px-6 lg:px-8" }, [
+          _c(
+            "div",
+            { staticClass: "bg-white overflow-hidden shadow-xl sm:rounded-lg" },
+            [
+              _c("div", { staticClass: "p-6" }, [
+                _c("h6", { staticClass: "text-xl font-semibold mb-6" }, [
+                  _vm._v("\n            Fase Peternakan Ayam\n          ")
+                ]),
+                _vm._v(" "),
+                _c("p", { staticClass: "leading-8 mb-4" }, [
+                  _vm._v(
+                    "\n            Pada module ini, kami akan membantu Anda untuk melalui tahapan-tahapan peternakan ayam secara professional. Didukung oleh "
+                  ),
+                  _c("i", [_vm._v("guide-guide")]),
+                  _vm._v(
+                    " yang telah disusun oleh para pakar peternak, kami menjamin hasil maksimal yang akan menguntungkan Anda sebagai peternak. Dengan menekan tombol setuju di akhir halaman ini, Anda akan terdaftar pada program "
+                  ),
+                  _c("i", [_vm._v("guidance")]),
+                  _vm._v(" kami.\n          ")
+                ])
+              ]),
+              _vm._v(" "),
+              _c(
+                "div",
+                {
+                  staticClass:
+                    "border-l-4 leading-8 px-6 py-4 border-red-300 bg-red-50"
+                },
+                [
+                  _vm._v("\n          Perlu diingat bahwa setiap "),
+                  _c("i", [_vm._v("loss")]),
+                  _vm._v(
+                    " yang Anda alami bukan sepenuhnya tanggung jawab kami.\n        "
+                  )
+                ]
+              ),
+              _vm._v(" "),
+              _c("div", { staticClass: "leading-8 p-6" }, [
+                _vm._v(
+                  "\n          Pada module ini, Anda akan melalui 6 tahapan. Tahapan-tahapan tersebut adalah:\n        "
+                )
+              ]),
+              _vm._v(" "),
+              _c(
+                "div",
+                {
+                  staticClass:
+                    "border-l-4 leading-8 px-6 py-4 border-gray-300 bg-gray-50 border-b"
+                },
+                [
+                  _c("div", { staticClass: "font-bold" }, [
+                    _vm._v("1. Persiapan.")
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "ml-4" }, [
+                    _vm._v(
+                      "\n            Anda harus menginput beberapa data, yang nantinya data tersebut akan kami gunakan sebagai data analitik. Seluruh data yang Anda simpan tidak akan terlihat oleh orang lain, termasuk kami namun tidak terbatas pada developer yang menggunakan data Anda untuk pembuatan dan improvisasi analitik.\n          "
+                    )
+                  ])
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                {
+                  staticClass:
+                    "border-l-4 leading-8 px-6 py-4 border-gray-300 bg-gray-50 border-b"
+                },
+                [
+                  _c("div", { staticClass: "font-bold" }, [
+                    _vm._v("2. Pemilihan Lokasi Kandang.")
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "ml-4" }, [
+                    _vm._v(
+                      "\n            Sebuah tahapan krusial yang Anda harus ikuti, hal ini juga berdampak pada keberlangsungan kegiatan ternak Anda. Disini Anda akan kami pandu untuk menentukan kondisi ideal sebuah kandang.\n          "
+                    )
+                  ])
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                {
+                  staticClass:
+                    "border-l-4 leading-8 px-6 py-4 border-gray-300 bg-gray-50 border-b"
+                },
+                [
+                  _c("div", { staticClass: "font-bold" }, [
+                    _vm._v("3. Fase Pemeliharaan")
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "ml-4" }, [
+                    _vm._v(
+                      "\n            Pada tahapan ini, Anda diharuskan untuk menginput data-data setiap hari sebanyak "
+                    ),
+                    _c("i", [_vm._v("n")]),
+                    _vm._v(
+                      "-hari (banyaknya hari bisa Anda tentukan sendiri pada tahap pertama).\n          "
+                    )
+                  ])
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                {
+                  staticClass:
+                    "border-l-4 leading-8 px-6 py-4 border-gray-300 bg-gray-50"
+                },
+                [
+                  _c("div", { staticClass: "font-bold" }, [_vm._v("4. Panen")]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "ml-4" }, [
+                    _vm._v(
+                      "\n            Tahapan akhir yang akan Anda lakukan. Seperti sebelumnya, Anda diwajibkan untuk menginput beberapa data sebagai data analitik kami.\n          "
+                    )
+                  ])
+                ]
+              ),
+              _vm._v(" "),
+              _c("div", { staticClass: "p-6 leading-8" }, [
+                _vm._v(
+                  "\n          Setelah semua tahapan di atas selesai. Kami akan memberikan Anda laporan-laporan analitik. Laporan analitik yang kami generate, berupa:\n        "
+                )
+              ]),
+              _vm._v(" "),
+              _c(
+                "div",
+                {
+                  staticClass:
+                    "border-l-4 leading-8 px-6 py-4 border-b border-green-300 bg-green-50"
+                },
+                [
+                  _c("div", { staticClass: "font-bold" }, [
+                    _vm._v("1. Laporan General")
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "ml-4" }, [
+                    _vm._v(
+                      "\n            Laporan dari keseluruhan tahapan yang Anda telah input, beserta analitiknya.\n          "
+                    )
+                  ])
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                {
+                  staticClass:
+                    "border-l-4 leading-8 px-6 py-4 border-green-300 bg-green-50"
+                },
+                [
+                  _c("div", { staticClass: "font-bold" }, [
+                    _vm._v("2. Laporan Keuangan")
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "ml-4" }, [
+                    _vm._v(
+                      "\n            Laporan dari biaya-biaya yang telah Anda keluarkan selama mengikuti guidance ini.\n          "
+                    )
+                  ])
+                ]
+              ),
+              _vm._v(" "),
+              _c("div", { staticClass: "p-6" }, [
+                _c(
+                  "div",
+                  { staticClass: "flex flex-row-reverse" },
+                  [
+                    _c(
+                      "jet-confirms-password",
+                      {
+                        attrs: {
+                          title: "Konfirmasi Password",
+                          content:
+                            "Konfirmasi password Anda untuk mengikutin guidance ini.",
+                          button: "Ikuti Guide Ini",
+                          cancel: "Batalkan"
+                        },
+                        on: { confirmed: _vm.ikutiGuidance }
+                      },
+                      [
+                        _c(
+                          "jet-button",
+                          {
+                            class: { "opacity-25": _vm.mengkonfirmasi },
+                            attrs: {
+                              type: "button",
+                              disabled: _vm.mengkonfirmasi
+                            }
+                          },
+                          [
+                            _vm._v(
+                              "\n                Ikuti Guidance Ini\n              "
+                            )
+                          ]
+                        )
+                      ],
+                      1
+                    )
+                  ],
+                  1
+                )
+              ])
+            ]
+          )
+        ])
+      ])
+    ]
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
 /***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/User/Peternakan/Index.vue?vue&type=template&id=4e6f7fe7&":
 /*!*******************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/Pages/User/Peternakan/Index.vue?vue&type=template&id=4e6f7fe7& ***!
@@ -29688,13 +30108,27 @@ var render = function() {
             "div",
             { staticClass: "bg-white overflow-hidden shadow-xl sm:rounded-lg" },
             [
-              _c("div", { staticClass: "p-6" }, [
-                _c("div", { staticClass: "text-xl" }, [
-                  _vm._v(
-                    "\n            Modul peternakan yang tersedia:\n          "
+              _c(
+                "div",
+                [
+                  _c("div", { staticClass: "text-xl p-6" }, [
+                    _vm._v(
+                      "\n            Modul peternakan yang tersedia:\n          "
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c(
+                    "inertia-link",
+                    {
+                      staticClass:
+                        "block border-l-4 border-gray-400 text-lg p-4 bg-gray-50 transition duration-200 ease-in-out hover:bg-gray-100",
+                      attrs: { href: _vm.route("user.peternakan.ayam.index") }
+                    },
+                    [_vm._v("\n            Ayam\n          ")]
                   )
-                ])
-              ])
+                ],
+                1
+              )
             ]
           )
         ])
@@ -43453,6 +43887,8 @@ var map = {
 	"./Profile/UpdatePasswordForm.vue": "./resources/js/Pages/Profile/UpdatePasswordForm.vue",
 	"./Profile/UpdateProfileInformationForm": "./resources/js/Pages/Profile/UpdateProfileInformationForm.vue",
 	"./Profile/UpdateProfileInformationForm.vue": "./resources/js/Pages/Profile/UpdateProfileInformationForm.vue",
+	"./User/Peternakan/Ayam/Index": "./resources/js/Pages/User/Peternakan/Ayam/Index.vue",
+	"./User/Peternakan/Ayam/Index.vue": "./resources/js/Pages/User/Peternakan/Ayam/Index.vue",
 	"./User/Peternakan/Index": "./resources/js/Pages/User/Peternakan/Index.vue",
 	"./User/Peternakan/Index.vue": "./resources/js/Pages/User/Peternakan/Index.vue"
 };
@@ -44854,6 +45290,75 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_UpdateProfileInformationForm_vue_vue_type_template_id_f38ebb82___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_UpdateProfileInformationForm_vue_vue_type_template_id_f38ebb82___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./resources/js/Pages/User/Peternakan/Ayam/Index.vue":
+/*!***********************************************************!*\
+  !*** ./resources/js/Pages/User/Peternakan/Ayam/Index.vue ***!
+  \***********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Index_vue_vue_type_template_id_c00065fc___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Index.vue?vue&type=template&id=c00065fc& */ "./resources/js/Pages/User/Peternakan/Ayam/Index.vue?vue&type=template&id=c00065fc&");
+/* harmony import */ var _Index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Index.vue?vue&type=script&lang=js& */ "./resources/js/Pages/User/Peternakan/Ayam/Index.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _Index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _Index_vue_vue_type_template_id_c00065fc___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _Index_vue_vue_type_template_id_c00065fc___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/Pages/User/Peternakan/Ayam/Index.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/Pages/User/Peternakan/Ayam/Index.vue?vue&type=script&lang=js&":
+/*!************************************************************************************!*\
+  !*** ./resources/js/Pages/User/Peternakan/Ayam/Index.vue?vue&type=script&lang=js& ***!
+  \************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../../node_modules/vue-loader/lib??vue-loader-options!./Index.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/User/Peternakan/Ayam/Index.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/Pages/User/Peternakan/Ayam/Index.vue?vue&type=template&id=c00065fc&":
+/*!******************************************************************************************!*\
+  !*** ./resources/js/Pages/User/Peternakan/Ayam/Index.vue?vue&type=template&id=c00065fc& ***!
+  \******************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Index_vue_vue_type_template_id_c00065fc___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../../node_modules/vue-loader/lib??vue-loader-options!./Index.vue?vue&type=template&id=c00065fc& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/User/Peternakan/Ayam/Index.vue?vue&type=template&id=c00065fc&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Index_vue_vue_type_template_id_c00065fc___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Index_vue_vue_type_template_id_c00065fc___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 
