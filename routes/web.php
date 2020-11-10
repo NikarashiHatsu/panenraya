@@ -37,7 +37,12 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.', 'middleware' => ['check_adm
 Route::group(['prefix' => 'user', 'as' => 'user.', 'middleware' => ['check_user', 'auth:sanctum']], function() {
     Route::group(['prefix' => 'peternakan', 'as' => 'peternakan.'], function() {
         Route::resource('', '\App\Http\Controllers\User\PeternakanController');
-        Route::resource('ayam', '\App\Http\Controllers\User\Peternakan\AyamController');
+        
+        // Ayam App
+        Route::group(['prefix' => 'ayam', 'as' => 'ayam.'], function() {
+            Route::resource('', '\App\Http\Controllers\User\Peternakan\AyamController');
+            Route::get('/app', '\App\Http\Controllers\User\Peternakan\AyamAppController@app')->name('app');
+        });
     });
 });
 

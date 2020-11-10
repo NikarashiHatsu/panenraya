@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\User\Peternakan;
 
 use App\Http\Controllers\Controller;
+use App\Models\Master\AppAyamRegisteredUser;
 use Illuminate\Http\Request;
 use Inertia\Inertia;
 
@@ -36,7 +37,7 @@ class AyamController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        return response()->json($request->all());
     }
 
     /**

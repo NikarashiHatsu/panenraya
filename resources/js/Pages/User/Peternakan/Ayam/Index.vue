@@ -91,6 +91,38 @@
         </div>
       </div>
     </div>
+
+    <jet-dialog-modal :show="isDialogSuccessShown">
+      <template #title>
+        <span class="text-green-500">Berhasil</span>
+      </template>
+
+      <template #content>
+        Anda telah terdaftar
+      </template>
+
+      <template #footer>
+        <inertia-link :href="route('user.peternakan.ayam.app')">
+          Buka Dashboard
+        </inertia-link>
+      </template>
+    </jet-dialog-modal>
+
+    <jet-dialog-modal :show="isDialogFailedShown">
+      <template #title>
+        <span class="text-red-500">Gagal</span>
+      </template>
+
+      <template #content>
+        Pendaftaran gagal, mohon tunggu beberapa saat lagi.
+      </template>
+      
+      <template #footer>
+        <jet-secondary-button>
+          Tutup Modal
+        </jet-secondary-button>
+      </template>
+    </jet-dialog-modal>
     
   </app-layout>
 </template>
@@ -99,23 +131,35 @@
   import AppLayout from '@/Layouts/AppLayout'
   import JetButton from '@/Jetstream/Button'
   import JetConfirmsPassword from '@/Jetstream/ConfirmsPassword'
+  import JetDialogModal from '@/Jetstream/DialogModal'
+  import JetSecondaryButton from '@/Jetstream/SecondaryButton'
 
   export default {
     components: {
       AppLayout,
       JetButton,
       JetConfirmsPassword,
+      JetDialogModal,
+      JetSecondaryButton,
     },
 
     data() {
       return {
+        isDialogSuccessShown: false,
+        isDialogFailedShown: false,
         mengkonfirmasi: false
       }
     },
 
     methods: {
       ikutiGuidance() {
-        alert("Anda terdaftar pada guidance ini.");
+        axios.post(route('user.peternakan.ayam.store').url(), {
+          userId: this.$page.user.id
+        }).then(response => {
+          console.log(response);
+        }).catch(error => {
+          console.log(error);
+        });
       }
     }
   }
